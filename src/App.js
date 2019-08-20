@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Brand_Logo_195x100px from '../dist/vender/img/logo-white.png'
 
 export default class App extends Component {
 
@@ -7,7 +8,7 @@ export default class App extends Component {
             <>
                 <header className="header under-construction"> 
                     <div className="logo-box under-construction">
-                        <img src="" alt="" className="logo" />
+                        <img src={Brand_Logo_195x100px} alt="image" className="logo" />
                     </div>
                     <div className="text-box under-construction">
                         <h1 className="header-primary">
