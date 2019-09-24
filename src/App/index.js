@@ -1,25 +1,24 @@
 import React, { Component } from 'react'
-import Brand_Logo from '../dist/vender/img/logo-white.png'
+import Brand_Logo from '../../dist/vender/img/logo-white.png'
+import LandingPage from './Layouts/LandingPage'
 
 export default class App extends Component {
+    // leave as a class (instead of function) for now even though it only renders a view
+    
 
     render() {
         return(
             <>
-                <LandingPage className="header"> 
-                    <div className="under-construction logo-box">
-                        <img src={Brand_Logo} alt="image" className="logo" />
-                    </div>
-                    <div className="under-construction header__text-banner">
-                        <h1 className="header-primary">
-                            <span className="header-primary-main">Indoors</span>
-                            <span className="header-primary-sub">why go outside</span>
-                        </h1>
-                        <a href="#" className="btn btn-white btn-animated">Discover Sleep</a>
-                    </div>
-                </LandingPage>
+                <LandingPage logo={Brand_Logo} />
             </>
         )
     }
 }
 
+
+/*  TODO:
+
+    Access all brand images and pass as properties into each page
+        - css background style components receive props for png files.
+
+*/
