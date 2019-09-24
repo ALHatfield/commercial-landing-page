@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Brand_Logo from '../dist/vender/img/logo-white.png'
 
-export default class App extends Component {
+export default class LandingPage extends Component {
 
     render() {
         return(
@@ -22,4 +21,3 @@ export default class App extends Component {
         )
     }
 }
-
