@@ -25,6 +25,7 @@ $image-hero: "../dist/vender/img/hero1.jpg";
   padding: 0;
   box-sizing: border-box;
 }
+
 /* animations */
 @keyframes moveInFromTop {
   0% {
@@ -80,7 +81,6 @@ body {
       50% 100%, 
       0 80%
     );
-  
 }
 .logo-box {
   top: 40px;
