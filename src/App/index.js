@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
-import Brand_Logo from '../../dist/vender/img/logo-white.png'
 import LandingPage from './Layouts/LandingPage'
+
+
+const content = {
+    name: "Indoors",
+    slogan: "Why go outside?",
+    logo: '../../dist/vender/img/logo-white.png'
+}
+
+
 
 export default class App extends Component {
     // leave as a class (instead of function) for now even though it only renders a view
@@ -9,7 +17,7 @@ export default class App extends Component {
     render() {
         return(
             <>
-                <LandingPage logo={Brand_Logo} />
+                <LandingPage {...content} />
             </>
         )
     }
@@ -17,8 +25,5 @@ export default class App extends Component {
 
 
 /*  TODO:
-
-    Access all brand images and pass as properties into each page
-        - css background style components receive props for png files.
-
+    figure out node fs module to join image name to compontent's relative path to dist folder
 */

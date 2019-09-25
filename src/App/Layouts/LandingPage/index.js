@@ -2,45 +2,46 @@ import React from 'react'
 import styled from 'styled-components'
 
 // first attempt at styled components
-const Header = styled.header`
-    position: relative;
-    height: 95vh;
-    text-align: center;
-    background-size: cover;
-    background-position: top;
-    background-image: 
-    linear-gradient(
-        to right bottom, 
-        rgba(0, 46, 126, 0.8),
-        rgba(31, 0, 102, 0.8),
-    ),
-    url('../dist/vender/img/hero.jpg');
-    clip-path: 
-    polygon(
-        0 0,  
-        100% 0,
-        100% 80%,
-        50% 100%, 
-        0 80%
-  );
-`
+// const Header = styled.header`
+
+// `
+
+// const TextBanner = styled.div`
+
+// `
+
+// functional view rendering components
+const BrandLogo = ({ logo }) => {
+    return(
+        <div className="under-construction logo-box">
+            <img src={ logo } alt="image" className="logo" />
+        </div>
+    )
+}
+
+const BrandHeading = ({ 
+    heading, 
+    slogan 
+}) => {
+    return(
+        <h1 className="header-primary">
+            <span className="header-primary-main">{ heading }</span>
+            <span className="header-primary-sub">{ slogan }</span>
+        </h1>
+    )
+}
 
 
-const LandingPage = ({ logo }) => {
+const LandingPage = (props) => {
 
     return(
-        <Header className="header"> 
-            <div className="under-construction logo-box">
-                <img src={logo} alt="image" className="logo" />
-            </div>
+        <div className="header"> 
+            <BrandLogo logo={ props.logo } />
             <div className="under-construction header__text-banner">
-                <h1 className="header-primary">
-                    <span className="header-primary-main">Indoors</span>
-                    <span className="header-primary-sub">why go outside</span>
-                </h1>
+                <BrandHeading heading={ props.name } slogan={ props.slogan } />
                 <a href="#" className="btn btn-white btn-animated">Discover Sleep</a>
             </div>
-        </Header>
+        </div>
     )
 }
 
