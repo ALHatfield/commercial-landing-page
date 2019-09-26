@@ -1,25 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const LandingPage = ({
-  name,
-  slogan,
-  text,
-  logo,
-  image
-}) => {
-  return(
-    <Banner image_file={ image }> 
-      <BrandLogo logo_file={ logo } />
-      <div className="header__text-banner">
-        <BrandHeading heading={ name } slogan={ slogan } />
-        <Button text={text} />
-      </div>
-    </Banner>
-  )
-}
-export default LandingPage;
-
+import styled, { ThemeProvider } from 'styled-components'
 
 
 
@@ -53,32 +33,62 @@ const Button = ({ text }) => {
 
 
 // Style Components
-const Banner = styled.header`
+import bg_image from '../../Images/hero.jpg'
+const Banner = styled.section`
   position: relative;
-  height: 95vh;
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: top;
-  background-image: 
-    linear-gradient(
-      to right bottom, 
-      rgba(38, 0, 88, 0.3),
-      rgba(0, 77, 66, 0.6),
-    ),
-    ${props => `url(../../Images/${props.image_file})`}; /* ISSSSUESSSSS S !!!!!!!!!!!!!!!!!!!!!!*/
+  background-image: url(${bg_image});
+`;
+
+const Overlay = styled.section`
+  position: relative;
+  height: 90vh;
   clip-path: 
     polygon(
       0 0,  
       100% 0,
-      100% 80%,
-      50% 100%, 
-      0 80%
+      100% 80%, 
+      0 100%
     );
-`;
+  
+  > section {
+    z-index: 100;
+    background-image: linear-gradient(
+      to right bottom, 
+      rgba(0, 46, 126, 0.8),
+      rgba(31, 0, 102, 0.8),
+    )
+  }
+`
 
-const TextBanner = styled.div`
-
+const HeroText = styled.h1`
+  text-align: center;
 `;
 // End of styled components
 
+
+
+const LandingPage = ({
+  name,
+  slogan,
+  text,
+  logo,
+  image
+}) => {
+  return(
+    <Overlay>
+      <Banner hero_image={ image }>
+        <BrandLogo logo_file={ logo } />
+        <HeroText className="header__text-banner">
+          <BrandHeading heading={ name } slogan={ slogan } />
+          <Button text={text} />
+        </HeroText>
+      </Banner>
+    </Overlay>    
+  )
+}
+export default LandingPage;
 
