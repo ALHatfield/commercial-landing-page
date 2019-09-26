@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./dist/vender/img/hero.jpg":
-/*!**********************************!*\
-  !*** ./dist/vender/img/hero.jpg ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"6e09f4102b0d64adc38d21bd9c89a9a7.jpg\";\n\n//# sourceURL=webpack:///./dist/vender/img/hero.jpg?");
-
-/***/ }),
-
 /***/ "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js ***!
@@ -140,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar unitlessKeys = {\n  anima
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar getUrl = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../dist/vender/img/hero.jpg */ \"./dist/vender/img/hero.jpg\"));\n// Module\nexports.push([module.i, \"/*\\r\\nThis file will eventually be refactored into scss\\r\\n\\r\\n\\r\\ncolors \\r\\n$background-color-primary: rgba(38, 0, 88, 0.3);\\r\\n$background-color-secondary: rgba(0, 77, 66, 0.6);\\r\\n$text-color-primary: rgba(255,255,255,0.9);\\r\\n$text-color-default:rgba(33,33,33,0.9); \\r\\n\\r\\nfiles  \\r\\n$image-hero: \\\"../dist/vender/img/hero1.jpg\\\"; \\r\\n\\r\\n\\r\\n*/\\n/* Development */\\n.under-construction {\\n  outline: 3px dotted orange; }\\n\\n/* Reset */\\n* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box; }\\n\\n/* animations */\\n@keyframes moveInFromTop {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(-20px); }\\n  100% {\\n    opacity: 1;\\n    transform: translate(0); } }\\n\\n@keyframes moveInFromBottom {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(20px); }\\n  100% {\\n    opacity: 1;\\n    transform: translate(0); } }\\n\\n/* style */\\nbody {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 16px;\\n  line-height: 1.7;\\n  color: rgba(33, 33, 33, 0.9);\\n  padding: 30px; }\\n\\n.header {\\n  position: relative;\\n  height: 95vh;\\n  text-align: center;\\n  background-size: cover;\\n  background-position: top;\\n  background-image: linear-gradient(to right bottom, rgba(0, 46, 126, 0.8), rgba(31, 0, 102, 0.8)), url(\" + ___CSS_LOADER_URL___0___ + \");\\n  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); }\\n\\n.logo-box {\\n  top: 40px;\\n  left: 40px;\\n  position: absolute; }\\n\\n.text-box {\\n  position: absolute;\\n  top: 40%;\\n  left: 50%;\\n  transform: translate(-50%, -50%); }\\n\\n.header__text-banner {\\n  position: absolute;\\n  top: 40%;\\n  width: 100%;\\n  transform: translate(0%, -50%); }\\n\\n.header-primary {\\n  color: rgba(255, 255, 255, 0.9);\\n  text-transform: uppercase;\\n  backface-visibility: hidden;\\n  margin-bottom: 60px; }\\n\\n.header-primary-main {\\n  display: block;\\n  font-size: 60px;\\n  font-weight: 400;\\n  letter-spacing: 35px;\\n  animation-name: moveInFromTop;\\n  animation-duration: 1s;\\n  animation-timing-function: ease-out; }\\n\\n.header-primary-sub {\\n  display: block;\\n  font-size: 33.5px;\\n  font-weight: 400;\\n  letter-spacing: 15px;\\n  animation-name: moveInFromBottom;\\n  animation-duration: 1s;\\n  animation-timing-function: ease-out; }\\n\\n/* psuedo-classes */\\n.btn:link,\\n.btn:visited {\\n  display: inline-block;\\n  padding: 15px 40px;\\n  border-radius: 100px;\\n  text-transform: uppercase;\\n  text-decoration: none;\\n  position: relative; }\\n\\n.btn:active {\\n  transform: translateY(-1px);\\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }\\n\\n.btn::after {\\n  content: \\\"\\\";\\n  /* content required for ::after */\\n  display: inline-block;\\n  height: 100%;\\n  width: 100%;\\n  border-radius: 100px;\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  z-index: -1;\\n  transition: all .4s; }\\n\\n.btn:hover {\\n  /* text-shadow: 0px 0px 10px white; */\\n  transform: translateY(-3px);\\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }\\n\\n.btn:hover::after {\\n  transform: scale(1.5);\\n  opacity: 0; }\\n\\n.btn-white {\\n  background-color: #fff;\\n  color: #777; }\\n\\n.btn-white::after {\\n  background-color: #fff; }\\n\\n.btn-animated {\\n  animation: moveInFromBottom .5s ease-out .75s; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"/*\\r\\nThis file will eventually be refactored into scss\\r\\n\\r\\n\\r\\ncolors \\r\\n$background-color-primary: rgba(38, 0, 88, 0.3);\\r\\n$background-color-secondary: rgba(0, 77, 66, 0.6);\\r\\n$text-color-primary: rgba(255,255,255,0.9);\\r\\n$text-color-default:rgba(33,33,33,0.9); \\r\\n\\r\\nfiles  \\r\\n$image-hero: \\\"../dist/vender/img/hero1.jpg\\\"; \\r\\n\\r\\n\\r\\n*/\\n/* Development */\\n.under-construction {\\n  outline: 3px dotted orange; }\\n\\n/* Reset */\\n* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box; }\\n\\n/* animations */\\n@keyframes moveInFromTop {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(-20px); }\\n  100% {\\n    opacity: 1;\\n    transform: translate(0); } }\\n\\n@keyframes moveInFromBottom {\\n  0% {\\n    opacity: 0;\\n    transform: translateY(20px); }\\n  100% {\\n    opacity: 1;\\n    transform: translate(0); } }\\n\\n/* style */\\nbody {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-weight: 400;\\n  font-size: 16px;\\n  line-height: 1.7;\\n  color: rgba(33, 33, 33, 0.9);\\n  padding: 30px; }\\n\\n/* \\r\\n.header {\\r\\n  position: relative;\\r\\n  height: 95vh;\\r\\n  text-align: center;\\r\\n  background-size: cover;\\r\\n  background-position: top;\\r\\n  background-image: \\r\\n    linear-gradient(\\r\\n      to right bottom, \\r\\n      rgba(0, 46, 126, 0.8),\\r\\n      rgba(31, 0, 102, 0.8),\\r\\n    ),\\r\\n    url('../dist/vender/img/hero.jpg');\\r\\n\\r\\n  clip-path: \\r\\n    polygon(\\r\\n      0 0,  \\r\\n      100% 0,\\r\\n      100% 80%,\\r\\n      50% 100%, \\r\\n      0 80%\\r\\n    );\\r\\n} \\r\\n*/\\n.logo-box {\\n  top: 40px;\\n  left: 40px;\\n  position: absolute; }\\n\\n.text-box {\\n  position: absolute;\\n  top: 40%;\\n  left: 50%;\\n  transform: translate(-50%, -50%); }\\n\\n.header__text-banner {\\n  position: absolute;\\n  top: 40%;\\n  width: 100%;\\n  transform: translate(0%, -50%); }\\n\\n.header-primary {\\n  color: rgba(255, 255, 255, 0.9);\\n  text-transform: uppercase;\\n  backface-visibility: hidden;\\n  margin-bottom: 60px; }\\n\\n.header-primary-main {\\n  display: block;\\n  font-size: 60px;\\n  font-weight: 400;\\n  letter-spacing: 35px;\\n  animation-name: moveInFromTop;\\n  animation-duration: 1s;\\n  animation-timing-function: ease-out; }\\n\\n.header-primary-sub {\\n  display: block;\\n  font-size: 33.5px;\\n  font-weight: 400;\\n  letter-spacing: 15px;\\n  animation-name: moveInFromBottom;\\n  animation-duration: 1s;\\n  animation-timing-function: ease-out; }\\n\\n/* psuedo-classes */\\n.btn:link,\\n.btn:visited {\\n  display: inline-block;\\n  padding: 15px 40px;\\n  border-radius: 100px;\\n  text-transform: uppercase;\\n  text-decoration: none;\\n  position: relative; }\\n\\n.btn:active {\\n  transform: translateY(-1px);\\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); }\\n\\n.btn::after {\\n  content: \\\"\\\";\\n  /* content required for ::after */\\n  display: inline-block;\\n  height: 100%;\\n  width: 100%;\\n  border-radius: 100px;\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  z-index: -1;\\n  transition: all .4s; }\\n\\n.btn:hover {\\n  /* text-shadow: 0px 0px 10px white; */\\n  transform: translateY(-3px);\\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }\\n\\n.btn:hover::after {\\n  transform: scale(1.5);\\n  opacity: 0; }\\n\\n.btn-white {\\n  background-color: #fff;\\n  color: #777; }\\n\\n.btn-white::after {\\n  background-color: #fff; }\\n\\n.btn-animated {\\n  animation: moveInFromBottom .5s ease-out .75s; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -153,18 +142,6 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \"{\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      // eslint-disable-next-line prefer-destructuring\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = modules[_i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = \"(\".concat(item[2], \") and (\").concat(mediaQuery, \")\");\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot).concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nmodule.exports = function (url, needQuotes) {\n  // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n  url = url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -450,6 +427,270 @@ eval("!function(e){ true?module.exports=e(null):undefined}(function e(a){\"use s
 
 /***/ }),
 
+/***/ "./src/App/Images sync recursive ^\\.\\/.*$":
+/*!**************************************!*\
+  !*** ./src/App/Images sync ^\.\/.*$ ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./favicon.png\": \"./src/App/Images/favicon.png\",\n\t\"./hero-small.jpg\": \"./src/App/Images/hero-small.jpg\",\n\t\"./hero.jpg\": \"./src/App/Images/hero.jpg\",\n\t\"./logo-green-1x.png\": \"./src/App/Images/logo-green-1x.png\",\n\t\"./logo-green-2x.png\": \"./src/App/Images/logo-green-2x.png\",\n\t\"./logo-green-small-1x.png\": \"./src/App/Images/logo-green-small-1x.png\",\n\t\"./logo-green-small-2x.png\": \"./src/App/Images/logo-green-small-2x.png\",\n\t\"./logo-white.png\": \"./src/App/Images/logo-white.png\",\n\t\"./nat-1-large.jpg\": \"./src/App/Images/nat-1-large.jpg\",\n\t\"./nat-1.jpg\": \"./src/App/Images/nat-1.jpg\",\n\t\"./nat-10.jpg\": \"./src/App/Images/nat-10.jpg\",\n\t\"./nat-2-large.jpg\": \"./src/App/Images/nat-2-large.jpg\",\n\t\"./nat-2.jpg\": \"./src/App/Images/nat-2.jpg\",\n\t\"./nat-3-large.jpg\": \"./src/App/Images/nat-3-large.jpg\",\n\t\"./nat-3.jpg\": \"./src/App/Images/nat-3.jpg\",\n\t\"./nat-4.jpg\": \"./src/App/Images/nat-4.jpg\",\n\t\"./nat-5.jpg\": \"./src/App/Images/nat-5.jpg\",\n\t\"./nat-6.jpg\": \"./src/App/Images/nat-6.jpg\",\n\t\"./nat-7.jpg\": \"./src/App/Images/nat-7.jpg\",\n\t\"./nat-8.jpg\": \"./src/App/Images/nat-8.jpg\",\n\t\"./nat-9.jpg\": \"./src/App/Images/nat-9.jpg\",\n\t\"./video.mp4\": \"./src/App/Images/video.mp4\",\n\t\"./video.webm\": \"./src/App/Images/video.webm\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/App/Images sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack:///./src/App/Images_sync_^\\.\\/.*$?");
+
+/***/ }),
+
+/***/ "./src/App/Images/favicon.png":
+/*!************************************!*\
+  !*** ./src/App/Images/favicon.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"86602809f305e0d26b2ca5318437b1db.png\";\n\n//# sourceURL=webpack:///./src/App/Images/favicon.png?");
+
+/***/ }),
+
+/***/ "./src/App/Images/hero-small.jpg":
+/*!***************************************!*\
+  !*** ./src/App/Images/hero-small.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"cd69d3552824dc8e99c3f2953de2735b.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/hero-small.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/hero.jpg":
+/*!*********************************!*\
+  !*** ./src/App/Images/hero.jpg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"6e09f4102b0d64adc38d21bd9c89a9a7.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/hero.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/logo-green-1x.png":
+/*!******************************************!*\
+  !*** ./src/App/Images/logo-green-1x.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"4c42c11f1fc0203483c21f2d6eeb8896.png\";\n\n//# sourceURL=webpack:///./src/App/Images/logo-green-1x.png?");
+
+/***/ }),
+
+/***/ "./src/App/Images/logo-green-2x.png":
+/*!******************************************!*\
+  !*** ./src/App/Images/logo-green-2x.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"3365abba6477c48e6be892cf6faa8f25.png\";\n\n//# sourceURL=webpack:///./src/App/Images/logo-green-2x.png?");
+
+/***/ }),
+
+/***/ "./src/App/Images/logo-green-small-1x.png":
+/*!************************************************!*\
+  !*** ./src/App/Images/logo-green-small-1x.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"c98cd0ce9ab26a0c7e6253f613ce21ac.png\";\n\n//# sourceURL=webpack:///./src/App/Images/logo-green-small-1x.png?");
+
+/***/ }),
+
+/***/ "./src/App/Images/logo-green-small-2x.png":
+/*!************************************************!*\
+  !*** ./src/App/Images/logo-green-small-2x.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"888043d544c9ed77285afbc360ffd27e.png\";\n\n//# sourceURL=webpack:///./src/App/Images/logo-green-small-2x.png?");
+
+/***/ }),
+
+/***/ "./src/App/Images/logo-white.png":
+/*!***************************************!*\
+  !*** ./src/App/Images/logo-white.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"40d4ef82deebd0521e91006d961ead40.png\";\n\n//# sourceURL=webpack:///./src/App/Images/logo-white.png?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-1-large.jpg":
+/*!****************************************!*\
+  !*** ./src/App/Images/nat-1-large.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"7fdf2a886516e020e300ae6bd544ab7d.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-1-large.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-1.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-1.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"d6c15bf0efcaf4c03c5cb0c9078cdd17.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-10.jpg":
+/*!***********************************!*\
+  !*** ./src/App/Images/nat-10.jpg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"2797561ff2a3de15c850f2744b73b6d1.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-10.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-2-large.jpg":
+/*!****************************************!*\
+  !*** ./src/App/Images/nat-2-large.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"7a25f1999a15760508f5e6131245aeac.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-2-large.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-2.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-2.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"4d3783688636b59662283e19991a2912.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-2.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-3-large.jpg":
+/*!****************************************!*\
+  !*** ./src/App/Images/nat-3-large.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"417d3d741a7a47b3d6ef0307228033a0.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-3-large.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-3.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-3.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"cc2b05433cbad0b369d131d02c0cac6a.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-3.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-4.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-4.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"61bbf12ae90a30cd432d77087921a02f.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-4.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-5.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-5.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"19f9a22f45a15fbf80d420862bcadffb.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-5.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-6.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-6.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"1ef6d764fc819e080d40aa72dfe03aa6.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-6.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-7.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-7.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"5f846d16e6be9a73e6eb73f620379af2.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-7.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-8.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-8.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"14efd82b81787a9764b2cb7eb7afd3e8.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-8.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/nat-9.jpg":
+/*!**********************************!*\
+  !*** ./src/App/Images/nat-9.jpg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"b525a99bcf20d08b2aaf6dd83b7be623.jpg\";\n\n//# sourceURL=webpack:///./src/App/Images/nat-9.jpg?");
+
+/***/ }),
+
+/***/ "./src/App/Images/video.mp4":
+/*!**********************************!*\
+  !*** ./src/App/Images/video.mp4 ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '\\u0000' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack:///./src/App/Images/video.mp4?");
+
+/***/ }),
+
+/***/ "./src/App/Images/video.webm":
+/*!***********************************!*\
+  !*** ./src/App/Images/video.webm ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '\\u001a' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack:///./src/App/Images/video.webm?");
+
+/***/ }),
+
 /***/ "./src/App/Layouts/LandingPage/index.js":
 /*!**********************************************!*\
   !*** ./src/App/Layouts/LandingPage/index.js ***!
@@ -458,7 +699,7 @@ eval("!function(e){ true?module.exports=e(null):undefined}(function e(a){\"use s
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n // first attempt at styled components\n// const Header = styled.header`\n// `\n// const TextBanner = styled.div`\n// `\n// functional view rendering components\n\nvar BrandLogo = function BrandLogo(_ref) {\n  var logo = _ref.logo;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"under-construction logo-box\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    src: logo,\n    alt: \"image\",\n    className: \"logo\"\n  }));\n};\n\nvar BrandHeading = function BrandHeading(_ref2) {\n  var heading = _ref2.heading,\n      slogan = _ref2.slogan;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", {\n    className: \"header-primary\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"header-primary-main\"\n  }, heading), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"header-primary-sub\"\n  }, slogan));\n};\n\nvar LandingPage = function LandingPage(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"header\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BrandLogo, {\n    logo: props.logo\n  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"under-construction header__text-banner\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BrandHeading, {\n    heading: props.name,\n    slogan: props.slogan\n  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n    href: \"#\",\n    className: \"btn btn-white btn-animated\"\n  }, \"Discover Sleep\")));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (LandingPage);\n\n//# sourceURL=webpack:///./src/App/Layouts/LandingPage/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\nfunction _templateObject2() {\n  var data = _taggedTemplateLiteral([\"\\n\\n\"]);\n\n  _templateObject2 = function _templateObject2() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  position: relative;\\n  height: 95vh;\\n  text-align: center;\\n  background-size: cover;\\n  background-position: top;\\n  background-image: \\n    linear-gradient(\\n      to right bottom, \\n      rgba(38, 0, 88, 0.3),\\n      rgba(0, 77, 66, 0.6),\\n    ),\\n    \", \";\\n  clip-path: \\n    polygon(\\n      0 0,  \\n      100% 0,\\n      100% 80%,\\n      50% 100%, \\n      0 80%\\n    );\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n\n\n\nvar LandingPage = function LandingPage(_ref) {\n  var name = _ref.name,\n      slogan = _ref.slogan,\n      text = _ref.text,\n      logo = _ref.logo,\n      image = _ref.image;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Banner, {\n    image_file: image\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BrandLogo, {\n    logo_file: logo\n  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"header__text-banner\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BrandHeading, {\n    heading: name,\n    slogan: slogan\n  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {\n    text: text\n  })));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (LandingPage); // Rendering Components\n\nvar BrandLogo = function BrandLogo(_ref2) {\n  var logo_file = _ref2.logo_file;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"logo_url-box\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    src: __webpack_require__(\"./src/App/Images sync recursive ^\\\\.\\\\/.*$\")(\"./\".concat(logo_file)),\n    className: \"logo\"\n  }));\n};\n\nvar BrandHeading = function BrandHeading(_ref3) {\n  var heading = _ref3.heading,\n      slogan = _ref3.slogan;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", {\n    className: \"header-primary\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"header-primary-main\"\n  }, heading), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"header-primary-sub\"\n  }, slogan));\n};\n\nvar Button = function Button(_ref4) {\n  var text = _ref4.text;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n    href: \"#\",\n    className: \"btn btn-white btn-animated\"\n  }, text);\n}; // End of Rendering Components\n// Style Components\n\n\nvar Banner = styled_components__WEBPACK_IMPORTED_MODULE_1__[\"default\"].header(_templateObject(), function (props) {\n  return \"url(../../Images/\".concat(props.image_file, \")\");\n});\nvar TextBanner = styled_components__WEBPACK_IMPORTED_MODULE_1__[\"default\"].div(_templateObject2()); // End of styled components\n\n//# sourceURL=webpack:///./src/App/Layouts/LandingPage/index.js?");
 
 /***/ }),
 
@@ -470,7 +711,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return App; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Layouts_LandingPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layouts/LandingPage */ \"./src/App/Layouts/LandingPage/index.js\");\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\n\n\nvar content = {\n  name: \"Indoors\",\n  slogan: \"Why go outside?\",\n  logo: '../../dist/vender/img/logo-white.png'\n};\n\nvar App =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));\n  }\n\n  _createClass(App, [{\n    key: \"render\",\n    // leave as a class (instead of function) for now even though it only renders a view\n    value: function render() {\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layouts_LandingPage__WEBPACK_IMPORTED_MODULE_1__[\"default\"], content));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n/*  TODO:\r\n\r\n    Access all brand images and pass as properties into each page\r\n        - css background style components receive props for png files.\r\n\r\n*/\n\n\n\n\n//# sourceURL=webpack:///./src/App/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Layouts_LandingPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layouts/LandingPage */ \"./src/App/Layouts/LandingPage/index.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance\"); }\n\nfunction _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n // TODO: this belongs in it's own component in the src directory and not in the App directory\n// async function getContent() {\n//   let content = await fetch('/api')\n// }\n\nvar App = function App() {\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])({\n    name: \"Indoors\",\n    slogan: \"Why go outside?\",\n    text: \"Discover Sleep\",\n    logo: 'logo-white.png',\n    image: 'hero.jpg'\n  }),\n      _useState2 = _slicedToArray(_useState, 1),\n      content = _useState2[0];\n\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layouts_LandingPage__WEBPACK_IMPORTED_MODULE_1__[\"default\"], content));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/App/index.js?");
 
 /***/ }),
 

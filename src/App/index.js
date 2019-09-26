@@ -1,29 +1,25 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import LandingPage from './Layouts/LandingPage'
+// TODO: this belongs in it's own component in the src directory and not in the App directory
+// async function getContent() {
+//   let content = await fetch('/api')
+// }
 
+const App = () => {
 
-const content = {
+  const [content] = useState({
     name: "Indoors",
     slogan: "Why go outside?",
-    logo: '../../dist/vender/img/logo-white.png'
+    text: "Discover Sleep",
+    logo: 'logo-white.png',
+    image: 'hero.jpg',
+  })
+
+  return(
+    <>
+      <LandingPage {...content} />
+    </>
+  )
 }
 
-
-
-export default class App extends Component {
-    // leave as a class (instead of function) for now even though it only renders a view
-    
-
-    render() {
-        return(
-            <>
-                <LandingPage {...content} />
-            </>
-        )
-    }
-}
-
-
-/*  TODO:
-    figure out node fs module to join image name to compontent's relative path to dist folder
-*/
+export default App
