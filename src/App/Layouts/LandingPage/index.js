@@ -33,16 +33,15 @@ const Button = ({ text }) => {
 
 
 // Style Components
-import bg_image from '../../Images/hero.jpg'
 const Banner = styled.section`
   position: relative;
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-position: top;
-  background-image: url(${bg_image});
 `;
 
+import bg_image from '../../Images/hero.jpg'
 const Overlay = styled.section`
   position: relative;
   height: 90vh;
@@ -55,12 +54,9 @@ const Overlay = styled.section`
     );
   
   > section {
-    z-index: 100;
-    background-image: linear-gradient(
-      to right bottom, 
-      rgba(0, 46, 126, 0.8),
-      rgba(31, 0, 102, 0.8),
-    )
+    background-image: 
+      radial-gradient(transparent, purple), 
+      url(${bg_image})
   }
 `
 
