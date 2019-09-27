@@ -96,12 +96,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* 
 .header__text-banner {
   position: absolute;
   top: 40%;
   width: 100%;
   transform: translate(0%, -50%);
-}
+} 
+*/
 .header-primary {
   color: rgba(255,255,255,0.9);
   text-transform: uppercase;

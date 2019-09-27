@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 
 
 
@@ -55,13 +55,17 @@ const Overlay = styled.section`
   
   > section {
     background-image: 
-      radial-gradient(transparent, purple), 
+      radial-gradient(transparent, white), 
       url(${bg_image})
   }
 `
 
-const HeroText = styled.h1`
+const TextContainer = styled.section`
   text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 // End of styled components
 
@@ -78,10 +82,10 @@ const LandingPage = ({
     <Overlay>
       <Banner hero_image={ image }>
         <BrandLogo logo_file={ logo } />
-        <HeroText className="header__text-banner">
+        <TextContainer className="header__text-banner">
           <BrandHeading heading={ name } slogan={ slogan } />
           <Button text={text} />
-        </HeroText>
+        </TextContainer>
       </Banner>
     </Overlay>    
   )
