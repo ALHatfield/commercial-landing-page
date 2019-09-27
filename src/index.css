@@ -25,6 +25,7 @@ $image-hero: "../dist/vender/img/hero1.jpg";
   padding: 0;
   box-sizing: border-box;
 }
+
 /* animations */
 @keyframes moveInFromTop {
   0% {
@@ -53,8 +54,8 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: rgba(33,33,33,0.9);
-  padding: 30px;
 }
+/* 
 .header {
   position: relative;
   height: 95vh;
@@ -62,26 +63,28 @@ body {
   background-size: cover;
   background-position: top;
   background-image: 
-    /* first bg-image */
     linear-gradient(
       to right bottom, 
       rgba(0, 46, 126, 0.8),
       rgba(31, 0, 102, 0.8),
     ),
-    /* second bg-image */
     url('../dist/vender/img/hero.jpg');
 
   clip-path: 
     polygon(
-    /* x y coordinates of element shape */
       0 0,  
       100% 0,
       100% 80%,
       50% 100%, 
       0 80%
     );
-  
-}
+} 
+*/
+
+
+
+
+
 .logo-box {
   top: 40px;
   left: 40px;
@@ -93,12 +96,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* 
 .header__text-banner {
   position: absolute;
   top: 40%;
   width: 100%;
   transform: translate(0%, -50%);
-}
+} 
+*/
 .header-primary {
   color: rgba(255,255,255,0.9);
   text-transform: uppercase;
