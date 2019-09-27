@@ -97,12 +97,14 @@ body {
   transform: translate(-50%, -50%);
 }
 /* 
+
 .header__text-banner {
   position: absolute;
   top: 40%;
   width: 100%;
   transform: translate(0%, -50%);
 } 
+
 */
 .header-primary {
   color: rgba(255,255,255,0.9);
@@ -129,6 +131,9 @@ body {
   animation-timing-function: ease-out;
 }
 /* psuedo-classes */
+/*
+
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -138,6 +143,9 @@ body {
   text-decoration: none;
   position: relative;
 }
+
+
+*/
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0,0,0,.4);

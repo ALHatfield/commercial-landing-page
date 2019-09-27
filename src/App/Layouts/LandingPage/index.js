@@ -1,15 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 
-
-// Rendering Components
+/*
+  Rendering Components 
+*/
 const BrandLogo = ({ logo_file }) => {
-  return(
-    <div className="logo_url-box">
-      <img src={require(`../../Images/${logo_file}`)} className="logo" />
-    </div>
-  )
+  return <img src={require(`../../Images/${logo_file}`)} className="logo" />
 }
 
 const BrandHeading = ({ heading, slogan }) => {
@@ -26,13 +23,18 @@ const Button = ({ text }) => {
     <a href="#" className="btn btn-white btn-animated">{ text }</a>
   )
 }
-// End of Rendering Components
+
+/* 
+  End of Rendering Components 
+*/
 
 
 
 
 
-// Style Components
+/* 
+  Style Components 
+*/
 const Banner = styled.section`
   position: relative;
   height: 100vh;
@@ -55,19 +57,33 @@ const Overlay = styled.section`
   
   > section {
     background-image: 
-      radial-gradient(transparent, white), 
+      radial-gradient(rgba(30, 30, 30, .5), white), 
       url(${bg_image})
   }
 `
 
-const TextContainer = styled.section`
+const HeroText = styled.section`
   text-align: center;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  > a:link,
+    a:visited {
+      display: inline-block;
+      padding: 15px 40px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+    }
+
 `;
-// End of styled components
+/*
+ End of styled components 
+*/
+
 
 
 
@@ -82,13 +98,13 @@ const LandingPage = ({
     <Overlay>
       <Banner hero_image={ image }>
         <BrandLogo logo_file={ logo } />
-        <TextContainer className="header__text-banner">
+        <HeroText className="header__text-banner">
           <BrandHeading heading={ name } slogan={ slogan } />
           <Button text={text} />
-        </TextContainer>
+        </HeroText>
       </Banner>
     </Overlay>    
   )
 }
-export default LandingPage;
 
+export default LandingPage;

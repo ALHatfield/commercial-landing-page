@@ -5,8 +5,8 @@ const App = () => {
 
   const [content, setContent] = useState({
     name: "Indoors",
-    slogan: "Why go outside",
-    text: "Discover Sleep",
+    slogan: "whyasdfsdf",
+    text: "sdfsdf",
     logo: 'logo-white.png',
     image: 'hero.jpg',
   })
