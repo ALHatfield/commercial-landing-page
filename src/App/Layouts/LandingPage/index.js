@@ -98,7 +98,7 @@ const LandingPage = ({
     <Overlay>
       <Banner hero_image={ image }>
         <BrandLogo logo_file={ logo } />
-        <HeroText className="header__text-banner">
+        <HeroText className="under-construction header__text-banner">
           <BrandHeading heading={ name } slogan={ slogan } />
           <Button text={text} />
         </HeroText>

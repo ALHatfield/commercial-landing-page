@@ -17,8 +17,19 @@ $image-hero: "../dist/vender/img/hero1.jpg";
 
 /* Development */
 .under-construction {
-  outline: 3px dotted orange;
+  outline: 3px dotted tomato;
 }
+.under-construction:before {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: 'element class = under construction';
+  color: #999;
+  background: #333;
+}
+
+
 /* Reset */
 * {
   margin: 0;
