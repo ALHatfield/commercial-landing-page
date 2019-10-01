@@ -6,7 +6,10 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 module.exports = {
   entry: {
-    app: './src/index.js'
+    'app': [
+      'react-hot-loader/patch',
+      './src/index'
+    ]
   },
   output: { 
     path: path.join(__dirname, 'dist'),
