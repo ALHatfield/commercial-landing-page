@@ -17,7 +17,7 @@ $image-hero: "../dist/vender/img/hero1.jpg";
 
 /* Development */
 .under-construction {
-  outline: 3px dotted tomato;
+  outline: 5px dotted limegreen;
 }
 .under-construction:before {
   display: inline;
