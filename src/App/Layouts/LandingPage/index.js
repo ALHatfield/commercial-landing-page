@@ -43,7 +43,7 @@ const Banner = styled.section`
   background-position: top;
 `;
 
-import bg_image from '../../Images/hero.jpg'
+import bg_image from '../../images/hero.jpg'
 const Overlay = styled.section`
   position: relative;
   height: 90vh;

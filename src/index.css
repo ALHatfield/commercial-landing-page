@@ -1,23 +1,20 @@
-/*
-This file will eventually be refactored into scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(33,33,33,0.9);
+}
+/*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+/* development */
 
-
-colors 
-$background-color-primary: rgba(38, 0, 88, 0.3);
-$background-color-secondary: rgba(0, 77, 66, 0.6);
-$text-color-primary: rgba(255,255,255,0.9);
-$text-color-default:rgba(33,33,33,0.9); 
-
-files  
-$image-hero: "../dist/vender/img/hero1.jpg"; 
-
-
-*/
-
-
-/* Development */
 .under-construction {
-  outline: 5px dotted limegreen;
+  outline: 3px dashed tomato;
 }
 .under-construction:before {
   display: inline;
@@ -28,16 +25,8 @@ $image-hero: "../dist/vender/img/hero1.jpg";
   color: #999;
   background: #333;
 }
+/*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
 
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* animations */
 @keyframes moveInFromTop {
   0% {
     opacity: 0;
@@ -58,14 +47,7 @@ $image-hero: "../dist/vender/img/hero1.jpg";
     transform: translate(0);
   }
 }
-/* style */
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: rgba(33,33,33,0.9);
-}
+
 /* 
 .header {
   position: relative;
