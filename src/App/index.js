@@ -4,9 +4,9 @@ import LandingPage from './Layouts/LandingPage'
 const App = () => {
 
   const [content, setContent] = useState({
-    name: "testing",
+    name: "indoors",
     slogan: "123",
-    text: "qwerty",
+    text: "asdf",
     logo: 'logo-white.png',
     image: 'hero.jpg',
   })

@@ -48,7 +48,7 @@ body {
   }
 }
 
-/* 
+/* BANNER COMPONENT
 .header {
   position: relative;
   height: 95vh;
@@ -73,9 +73,6 @@ body {
     );
 } 
 */
-
-
-
 
 
 .logo-box {
@@ -124,7 +121,7 @@ body {
   animation-timing-function: ease-out;
 }
 /* psuedo-classes */
-/*
+
 
 
 .btn:link,
@@ -138,7 +135,7 @@ body {
 }
 
 
-*/
+
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0,0,0,.4);
@@ -174,4 +171,5 @@ body {
 
 .btn-animated {
   animation: moveInFromBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; /* automatically applies the styles of 0% before the animation starts.  */
 }
