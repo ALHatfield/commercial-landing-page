@@ -55,7 +55,7 @@
   }
   
   /*----[when visible on screen]----*/
-  & .is-visible {
+  & .in-view {
     & [animate="fade-in"] {
       animation-name: fadeIn;
       animation-duration: 1s;
@@ -75,7 +75,7 @@
       animation-timing-function: ease-in;
       animation-fill-mode: backwards;
     }
-    & [animate="fadeChildrenFromLeft"] {
+    & [animate="fade-childrenFromLeft"] {
       @for $i from 1 through 5 { 
         > .animate-#{$i} {
           animation-name: fadeInFromLeft;
