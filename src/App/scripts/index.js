@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+/* ******
+* Do not use scroll event. Instead refer to  IntersectionObserver api 
+******
+***
+**/
+
+/*
 $(document).ready(function() {
 
   const $window = $(window);
@@ -9,6 +23,7 @@ $(document).ready(function() {
 
   })
 
+  
   $window.on('scroll', function(e) {
 
     isScrolledFromTop()
@@ -21,19 +36,21 @@ $(document).ready(function() {
         .addClass('not-in-view')
         .attr('animate', 'fade-out');
     
-    // isScrolledIntoView($animate_target)
-    //   ? $animate_target
-    //     .removeClass('not-in-view')
-    //     .addClass('in-view')
-    //     .attr('animate', 'fade-childrenFromLeft')
-    //   : $animate_target
-    //     .removeClass('in-view')
-    //     .addClass('not-in-view')
-    //     .attr('animate', 'fade-out');
+    isScrolledIntoView($animate_target)
+      ? $animate_target
+        .removeClass('not-in-view')
+        .addClass('in-view')
+        .attr('animate', 'fade-childrenFromLeft')
+      : $animate_target
+        .removeClass('in-view')
+        .addClass('not-in-view')
+        .attr('animate', 'fade-out');
   
   })
 
 })
+
+
 
 function isScrolledIntoView(elem) {
   let docViewTop = $(window).scrollTop();
@@ -50,3 +67,5 @@ function isScrolledFromTop() {
   let isViewNotTop = !(docViewTop <= 0);
   return isViewNotTop;
 }
+
+*/

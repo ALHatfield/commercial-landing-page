@@ -1,27 +1,28 @@
 import React, { useState } from 'react'
-import LandingPage from './Layouts/LandingPage'
+
+
+import LandingPage from './Layouts/LandingPage.js'
+
+
 
 const App = () => {
 
-  const [content, setContent] = useState({
+  const [content ] = useState({ 
     name: "indoors",
-    slogan: "123",
-    text: "asdf",
-    logo: 'logo-white.png',
-    image: 'hero.jpg',
+    slogan: 'why go outside?',
+    text: 'discover sleep',
+    images: {
+      hero: '/images/hero.jpg',
+      logo: '/images/logo-white.png',
+    }
   })
 
-
-  /* 
-    TODO: 
-    some cool server request here?
-    fetch('/api').then(res => setContent({...res}))
-  */
 
 
   return(
     <>
       <LandingPage {...content} />
+    
     </>
   )
 }
