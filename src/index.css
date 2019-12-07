@@ -10,8 +10,9 @@ body {
   line-height: 1.7;
   color: rgba(33,33,33,0.9);
 }
-/*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
-/* development */
+
+
+/* development *//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
 
 .under-construction {
   outline: 3px dashed tomato;
@@ -25,8 +26,8 @@ body {
   color: #999;
   background: #333;
 }
-/*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
 
+/* animations /////////////////////////////////////////////////////////////////////////////////*/
 @keyframes moveInFromTop {
   0% {
     opacity: 0;
@@ -48,7 +49,7 @@ body {
   }
 }
 
-/* BANNER COMPONENT */
+/* BANNER COMPONENT /////////////////////////////////////////////////////////////////////////////*/
 .header {
   position: relative;
   height: 95vh;
@@ -63,37 +64,18 @@ body {
     ),
     url(../images/hero.jpg);
 
-  clip-path: circle(40.0% at 50% 50%);
-  /* clip-path: 
+  /* clip-path: circle(40.0% at 50% 50%); */
+  clip-path: 
     polygon(
       0 0,  
       100% 0,
       100% 80%,
-      50% 100%, 
-      0 80%
-    ); */
+      0 100%, 
+    );
 }
 
 
 
-.logo-box {
-  top: 40px;
-  left: 40px;
-  position: absolute;
-}
-.text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header__text-banner {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  transform: translate(0%, -50%);
-} 
 
 
 .header-primary {
@@ -120,10 +102,32 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
-/* psuedo-classes */
+
+
+.container-center {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  a:link,
+  a:visited {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+  }
+}
 
 
 
+
+
+
+/* buttons ////////////////////////////////////////////////////////////////////////////////*/
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -172,4 +176,20 @@ body {
 .btn-animated {
   animation: moveInFromBottom .5s ease-out .75s;
   animation-fill-mode: backwards; /* automatically applies the styles of 0% before the animation starts.  */
+}
+
+
+
+
+
+.logo-box {
+  top: 40px;
+  left: 40px;
+  position: absolute;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
