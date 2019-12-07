@@ -20,14 +20,9 @@ const LandingPage = ({
             <span className="header-primary-main">{ name }</span>
             <span className="header-primary-sub">{ slogan }</span>
           </h1>
-          <a href="#" className="btn btn-white btn-animated">{ text }</a>
         </div>
       </section>
 
-      <section>
-        
-        
-      </section>
     </>
   )
 }
