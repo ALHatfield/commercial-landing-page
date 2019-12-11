@@ -1,10 +1,6 @@
 import React from 'react'
 
 
-
-
-
-
 const LandingPage = ({
   name,
   slogan,
@@ -19,6 +15,10 @@ const LandingPage = ({
             <span className="header-primary-main">{ name }</span>
             <span className="header-primary-sub">{ slogan }</span>
           </h1>
+        </div>
+
+        <div className="www under-construction">
+
         </div>
       </section>
 

@@ -1,21 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: rgba(33,33,33,0.9);
-}
+
 
 
 /* development //////////////////////////////////////*/
 
 .under-construction {
-  outline: 3px dashed tomato;
+  border: 3px dashed tomato;
 }
 .under-construction:before {
   display: inline;
@@ -27,27 +16,24 @@ body {
   background: #333;
 }
 
-/* animations //////////////////////////////////////*/
-@keyframes moveInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+.www {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+
+  bottom: 20vh;
+  transform: rotate(-15deg); // needs to be set as a variable
+  //                equal to the radius of the left angle.
+  //     a^2 + b^2 = c^2
+  //  a=100vw across            10,000
+  //  b=20vh from the bottom    400
+                        // c^2= 10,400
+                        
 }
-@keyframes moveInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
+
+
+
+
 
 /* banner component ////////////////////////////////*/
 .landingpage_container {
@@ -103,7 +89,6 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
-  transform: matrix(1, -0.2, 0.3, 1, 140, 538);
   animation-name: moveInFromTop;
   animation-duration: 1s;
   animation-timing-function: ease-out;
