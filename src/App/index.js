@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-import LandingPage from './Layouts/LandingPage.js'
+import LandingPage from './layouts/LandingPage.js'
 
 
 

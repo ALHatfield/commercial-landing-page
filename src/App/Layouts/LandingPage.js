@@ -1,5 +1,4 @@
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
 
 
 
@@ -14,8 +13,8 @@ const LandingPage = ({
 }) => {
   return(
     <>
-      <section className="header" img={ images.hero }>
-        <div className="container-center">
+      <section className="landingpage_container" img={ images.hero }>
+        <div className="header">
           <h1 className="header-primary">
             <span className="header-primary-main">{ name }</span>
             <span className="header-primary-sub">{ slogan }</span>
