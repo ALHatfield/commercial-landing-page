@@ -3,7 +3,7 @@
 
 */
 
-import React, { useState } from 'react';
+import React from 'react';
 
 
 
@@ -39,16 +39,12 @@ const Product = ({
           </div>
           <ul className="nav nav-tabs">
             <li className="product-nav-item nav-item active">
-              <div 
-                // onClick={() => props.handleTextChange("description")}
-              >
+              <div>
                 <span>DESCRIPTION</span>
               </div>
             </li>
             <li className="product-nav-item nav-item">
-              <div 
-                // onClick={() => props.handleTextChange("details")}
-              >
+              <div>
                 <span>DETAILS</span>
               </div>
             </li>
@@ -58,11 +54,7 @@ const Product = ({
         <div className="border-bottom-grey product-panel">
           <div className="product-text">
             <span>PRODUCT TEXT</span>
-            {
-              // this.state.text === 'description'
-              //   ? this.renderDescription()
-              //   : this.renderDetails()
-            }
+
           </div>
           <div className="product-price">
               <span className="discount-price"> { price1 }</span>

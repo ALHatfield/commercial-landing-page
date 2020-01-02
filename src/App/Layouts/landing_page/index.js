@@ -2,10 +2,6 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 
-
-/* 
-  Style Components 
-*/
 const Banner = styled.section`
   position: relative;
   height: 100vh;
@@ -13,25 +9,6 @@ const Banner = styled.section`
   background-size: cover;
   background-position: top;
 `;
-
-// import bg_image from '../../images/hero.jpg'
-const Overlay = styled.section`
-  position: relative;
-  height: 90vh;
-  clip-path: 
-    polygon(
-      0 0,  
-      100% 0,
-      100% 80%, 
-      0 100%
-    );
-  
-  > section {
-    background-image: 
-      radial-gradient(rgba(30, 30, 30, .5), white), 
-      url(${this.props.bg})
-  }
-`
 
 const HeroText = styled.section`
   text-align: center;
@@ -52,32 +29,44 @@ const HeroText = styled.section`
 
 `;
 
-/*
- End of styled components 
-*/
-
+const Overlay = styled.section`
+  position: relative;
+  height: 90vh;
+  clip-path: 
+    polygon(
+      0 0,  
+      100% 0,
+      100% 80%, 
+      0 100%
+    );
+  
+  > section {
+    background-image: 
+      radial-gradient(rgba(30, 30, 30, .5), white), 
+      url(${props => props.bg})
+  }
+`
 
 
 
 const LandingPage = ({
   name,
   logo,
-  landing
+  image,
+  text1,
+  text2,
 }) => {
   return(
-    // overlay sets bg and radial gradient
-    <Overlay bg={ landing.image }>
 
-      // banner sets 90vh ??? repeats css properties from overlay
-      <Banner hero_image={ image }>
-      
-        <img src={ image } className="logo" />
+    <Overlay bg={ image }>
+      <Banner>
         <HeroText className="header__text-banner">
+          <img src={ logo } className="logo" />
           <h1 className="header-primary">
-            <span className="header-primary-main">{ heading }</span>
-            <span className="header-primary-sub">{ slogan }</span>
+            <span className="header-primary-main">{ name }</span>
+            <span className="header-primary-sub">{ text1 }</span>
           </h1>
-          <a href="#" className="btn btn-white btn-animated">{ text }</a>
+          <a href="#" className="btn btn-white btn-animated">{ text2 }</a>
         </HeroText>
       </Banner>
     </Overlay>    

@@ -12,12 +12,12 @@ const App = () => {
   const [content, setContent] = useState({
     name: "name",
     logo: 'logo-white.png',
-    landing: {
-      image: 'hero.jpg',
-      text1: 'text1',
-      text2: 'text2',
-      text3: 'text3'
-    }
+
+    image: 'images/hero.jpg',
+    text1: 'text1',
+    text2: 'text2',
+    text3: 'text3'
+    
   })
 
   const [product, setProduct] = useState({
@@ -41,9 +41,6 @@ const App = () => {
       <LandingPage { ...content } />
       <ProductPage { ...product } />
 
-      // <section> // background-url slant        // idea?
-      //   <Landing {...content} />
-      // </section>
 
     </>
   )
