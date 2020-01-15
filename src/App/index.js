@@ -1,11 +1,17 @@
 /* dependencies */
-import React, { useState } from 'react'
+import React, { useState } from './node_modules/react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 /* layouts */
 import LandingPage from './layouts/landing_page'
 import ProductPage from './layouts/product_page'
+/* components */
 
-
-
+////////////////////////////////////////////////////////////////////
 
 const App = () => {
 
@@ -37,12 +43,17 @@ const App = () => {
 
 
   return(
-    <>
-      <LandingPage { ...content } />
-      <ProductPage { ...product } />
 
+    <Switch>
+      <Route path="/">
+        <LandingPage { ...content} />
+      </Route>
 
-    </>
+      <Route path="/product">
+        <ProductPage { ...product } />
+      </Route>
+    </Switch>
+    
   )
 }
 
