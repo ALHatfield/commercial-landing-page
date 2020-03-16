@@ -9,8 +9,13 @@ module.exports = {
     app: './src/index.js'
   },
   output: { 
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     filename: '[name].js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    inline:true,
+    port: 8080
   },
   plugins: [htmlPlugin],
   module: {
