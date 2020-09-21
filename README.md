@@ -1,10 +1,7 @@
+resources and references:
 
-After cloning the repo run:
-	npm install
+gruntfile.js:
+https://scotch.io/tutorials/a-simple-guide-to-getting-started-with-grunt
 
-to run locally:
-	npm run dev
-
-to build static files:
-	npm run build
-
+images:
+https://www.udemy.com/course/advanced-css-and-sass

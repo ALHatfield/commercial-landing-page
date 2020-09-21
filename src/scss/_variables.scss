@@ -1,0 +1,61 @@
+/*  Color Profile */
+$bg1: #7ed56f;
+$bg2: #55c57a;
+$bg3: #28b485;
+$color1: #777;
+$color2: #777;
+$color3: #777;
+
+.theme-1 {
+  color: $color1;
+  background-color: $bg1;
+}
+
+.color-1 {
+  color: $color1;
+}
+
+.color-2 {
+  color: $color2;
+}
+
+
+/*  View Width */
+$breakpoint_tablet: 576px;
+$breakpoint_desktop: 991px;
+
+/*  Responsive Mixin */
+@mixin min-width-Desktop {
+  @media (min-width: $breakpoint_desktop) {
+    font-family: Arial, Helvetica;
+    font-size: 18px;
+
+    .container {
+      margin: auto;
+      width: $breakpoint_desktop;
+    }
+  }
+}
+
+@mixin min-width-Tablet {
+  @media (min-width: $breakpoint_tablet) {
+    font-family: Arial, Helvetica;
+    font-size: 16px;
+
+    .container {
+      margin: auto;
+      width: $breakpoint_tablet;
+    }
+  }
+}
+
+@mixin Mobile {
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+
+
+  .container {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
