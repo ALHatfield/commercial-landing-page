@@ -1,3 +1,22 @@
+body {
+  @include Font;
+  @include width-Mobile;
+  @include min-width-Tablet;
+  @include min-width-Desktop;
+}
+
+//////////////////////////////////// color
+.theme-1 {
+  background-color: #fff;
+  color: #777;
+
+  ::after {
+    background-color: #fff;
+  }
+}
+
+
+//////////////////////////////////// typogrpahy
 h1 {
   font-size: 2em;
   font-weight: 700;
@@ -11,24 +30,12 @@ h2 {
 }
 
 h3 {
-  color: $color2;
+  color: $color-2;
   font-size: 1.25em;
   line-height: 2rem;
 }
 
-body {
-  @include Mobile;
-  @include min-width-Tablet;
-  @include min-width-Desktop;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: $color1;
-}
-
-
-///////////////////////////////////////
+/////////////////////////////////////// logos
 .logo {
   height: 35px;
 }
@@ -55,14 +62,14 @@ body {
   background-position: top;
   background-image:
     linear-gradient(to right bottom,
-      rgba($bg1, 0.5),
-      rgba($bg3, 0.5)),
+      rgba($bg-1, 0.5),
+      rgba($bg-3, 0.5)),
     url('hero.jpg');
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .heading-primary {
-  color: rgba(255, 255, 255, 0.9);
+  color: $color-1;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px;
@@ -73,78 +80,61 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
-  animation-name: moveInFromTop;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  line-height: 78px;
+  // animation-name: moveInFromTop;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 33.5px;
-  font-weight: 400;
-  letter-spacing: 15px;
-  animation-name: moveInFromBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  // animation-name: moveInFromBottom;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-out;
 }
 
-/* psuedo-classes */
+///////////////////////////////////////////
 
+.btn {
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(#000, .4);
+  }
 
+  &:hover {
+    /* text-shadow: 0px 0px 10px white; */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(#000, .4);
+  }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  padding: 15px 40px;
-  border-radius: 100px;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-}
+  &:link,
+  :visited {
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+  }
 
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
 
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
-}
-
-.btn::after {
-  content: "";
-  /* content required for ::after */
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.btn:hover {
-  /* text-shadow: 0px 0px 10px white; */
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
-}
-
-.btn:hover::after {
-  transform: scale(1.5);
-  opacity: 0;
-}
-
-.btn-white {
-  background-color: #fff;
-  color: #777;
-}
-
-.btn-white::after {
-  background-color: #fff;
-}
-
-.btn-animated {
-  animation: moveInFromBottom .5s ease-out .75s;
-  animation-fill-mode: backwards;
-  /* automatically applies the styles of 0% before the animation starts.  */
+  &:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
