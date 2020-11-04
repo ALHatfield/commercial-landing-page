@@ -46,12 +46,7 @@ h3 {
   position: absolute;
 }
 
-.heading-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 ////////////////////////////////////////////////////////
 .header {
@@ -68,33 +63,44 @@ h3 {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
+.heading-box {
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
 .heading-primary {
   color: $color-1;
+  font-size: 20px;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  text-align: right;
+  text-justify: inter-word;
 }
 
 .heading-primary-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
-  letter-spacing: 35px;
+  height: 78px;
   line-height: 78px;
-  // animation-name: moveInFromTop;
-  // animation-duration: 1s;
-  // animation-timing-function: ease-out;
+  animation-name: fade-in-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 17.4px;
-  // animation-name: moveInFromBottom;
-  // animation-duration: 1s;
-  // animation-timing-function: ease-out;
+  height: 60px;
+  margin-bottom: 120px;
+  animation-name: fade-in-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
+
 
 ///////////////////////////////////////////
 
@@ -103,6 +109,7 @@ h3 {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(#000, .4);
   }
+
   &:hover {
     /* text-shadow: 0px 0px 10px white; */
     transform: translateY(-3px);
