@@ -20,16 +20,9 @@ module.exports = function (grunt) {
         layoutdir: "src/templates/layouts",
         layout: ["default.hbs"],
       },
-      dev: {
-        files: [
-          {
-            expand: true,
-            flatten: true,
-            cwd: "src/templates/layouts/",
-            src: "**/*.hbs",
-            dest: "build/",
-          },
-        ],
+      site: {
+        src: ['**/*.hbs'],
+        dest: 'build/index'
       },
     },
 
@@ -63,6 +56,7 @@ module.exports = function (grunt) {
     "dart-sass": {
       target: {
         options: {
+          sourcemap: "none",
           outputStyle: "compressed",
         },
         files: [
@@ -124,7 +118,7 @@ module.exports = function (grunt) {
   grunt.registerTask("default", [
     "clean:default",
     "copy:default",
-    "assemble:dev",
+    "assemble",
     "dart-sass",
     "watch:all",
   ]);

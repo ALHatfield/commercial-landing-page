@@ -29,7 +29,6 @@ $breakpoint_desktop: 991px;
   @media (min-width: $breakpoint_desktop) {
     font-family: Arial, Helvetica;
     font-size: 18px;
-
     .container {
       margin: auto;
       width: $breakpoint_desktop;
@@ -41,7 +40,6 @@ $breakpoint_desktop: 991px;
   @media (min-width: $breakpoint_tablet) {
     font-family: Arial, Helvetica;
     font-size: 16px;
-
     .container {
       margin: auto;
       width: $breakpoint_tablet;
@@ -52,8 +50,6 @@ $breakpoint_desktop: 991px;
 @mixin Mobile {
   font-family: Arial, Helvetica;
   font-size: 14px;
-
-
   .container {
     margin-left: 1%;
     margin-right: 1%;
