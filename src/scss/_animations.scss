@@ -1,97 +1,75 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
 @keyframes fade-in {
-  from {
+  0% {
     opacity: 0;
     visibility: hidden;
   }
 
-  to {
+  100% {
     opacity: 1;
     visibility: visible;
   }
 }
 
 @keyframes fade-out {
-  from {
+  0% {
     opacity: 1;
     visibility: visible;
   }
 
-  to {
+  100% {
     opacity: 0;
     visibility: hidden;
-  }
-}
-
-@keyframes fade-in-top {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes fade-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(-10%);
   }
 }
 
 @keyframes fade-in-left {
-  from {
+  0% {
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-10%);
+    transform: translateX(-10rem);
   }
 
-  to {
+  80% {
+    opacity: 0.2;
+    // transform: translateX(-2rem);
+  }
+
+  100% {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
   }
 }
 
-////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 [animate] {
-  & [animate="fade-in"] {
+  & [animate~="fade-in"] {
     animation-name: fade-in;
+    animation-delay: 1s;
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: backwards;
   }
 
-  & [animate="fade-out"] {
+  & [animate~="fade-out"] {
     animation-name: fade-out;
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: backwards;
   }
 
-  & [animate="fade-in-left"] {
+  & [animate~="fade-in-left"] {
     animation-name: fade-in-left;
+    animation-delay: 1s;
     animation-duration: 1s;
-    // animation-delay: (1s / 4);
     animation-timing-function: ease-in;
     animation-fill-mode: backwards;
   }
 
-  & [animate="fade-in-children"] {
+  & [animate~="fade-in-children"] {
     @for $i from 1 through 5 {
       >.animate-#{$i} {
         animation-name: fade-in-left;
@@ -103,23 +81,29 @@
     }
   }
 
+  /*----[delay]----*/
+  // & [animate$="delay-"] {
+  //   // trying to get delay-{value}
+  //   animation-delay: $i; // assign value to delay
+  // }
+
   /*----[when visible on screen]----*/
-  & .is-visible {
-    & [animate="fade-in"] {
+  & .visible {
+    & [animate~="fade-in"] {
       animation-name: fade-in;
       animation-duration: 1s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
     }
 
-    & [animate="fade-out"] {
+    & [animate~="fade-out"] {
       animation-name: fade-out;
       animation-duration: 1s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
     }
 
-    & [animate="fade-in-left"] {
+    & [animate~="fade-in-left"] {
       animation-name: fade-in-left;
       animation-duration: 1s;
       animation-delay: 0;
