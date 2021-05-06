@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         tasks: [
           "clean:default",
           "copy:default",
-          "assemble:dev",
+          "assemble",
           "dart-sass",
           "watch:all",
         ],

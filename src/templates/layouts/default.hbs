@@ -7,21 +7,34 @@
 </head>
 
 <body>
-  <div class="header">
-    <div class="logo-box">
-      <img src="logo-white.png" alt="Logo" class="logo">
+
+  {{!-- LANDING PAGE --}}
+  <div id="landing">
+    <div class="container h-100">
+      <div class="row">
+        <div class="col">
+          <div class="logo-box">
+            <img src="logo-white.png" alt="Logo" class="logo">
+          </div>
+
+          
+            <h1 class="isVisible text-right" animate="fadeInFromLeft">outdoors</h1>
+            <h3 class="isVisible text-right" animate="fadeInFromRight">is where life happens</h3>
+            {{!-- <div class="btn">btn</div> --}}
+            {{!-- <div class="btn btn-white btn-animated">btn</div> --}}
+          </div>
+        </div>
+      </div>
     </div>
-
-    <h1 class="heading-primary heading-box">
-      <span class="heading-primary-main">outdoors</span>
-      <span class="heading-primary-sub">is where life happens</span>
-    </h1>
-
-
-    {{!-- <div class="btn">btn</div>
-    <div class="btn btn-white btn-animated">btn</div> --}}
-
+    
   </div>
+
+  <main>
+    <section id="about">
+      <h2 class="heading-secondary">exciting tours for adventurous people</h2>
+    </section>
+
+  </main>
 
   {{> scripts}}
 </body>

@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>data.title</title>
+  <title></title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>  <style>
+  <script src="index.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <style>
     * {
       margin: 0;
       padding: 0;
@@ -18,19 +21,31 @@
   </style></head>
 
 <body>
-  <div class="header">
-    <div class="logo-box">
-      <img src="logo-white.png" alt="Logo" class="logo">
+
+  <div id="landing">
+    <div class="container h-100">
+      <div class="row">
+        <div class="col">
+          <div class="logo-box">
+            <img src="logo-white.png" alt="Logo" class="logo">
+          </div>
+
+          
+            <h1 class="isVisible text-right" animate="fadeInFromLeft">outdoors</h1>
+            <h3 class="isVisible text-right" animate="fadeInFromRight">is where life happens</h3>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <h1 class="heading-primary heading-box">
-      <span class="heading-primary-main">outdoors</span>
-      <span class="heading-primary-sub">is where life happens</span>
-    </h1>
-
-
-
+    
   </div>
+
+  <main>
+    <section id="about">
+      <h2 class="heading-secondary">exciting tours for adventurous people</h2>
+    </section>
+
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

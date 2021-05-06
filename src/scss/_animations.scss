@@ -9,7 +9,6 @@
     visibility: visible;
   }
 }
-
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -21,9 +20,7 @@
     visibility: hidden;
   }
 }
-
-
-@keyframes moveInFromTop {
+@keyframes fadeInFromTop {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -34,8 +31,7 @@
     transform: translate(0);
   }
 }
-
-@keyframes moveInFromBottom {
+@keyframes fadeInFromBottom {
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -46,57 +42,57 @@
     transform: translate(0);
   }
 }
-
 @keyframes fadeInFromLeft {
   from {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-5vw);
+    transform: translateX(-2rem);
   }
 
   to {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(2rem);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
   }
 }
 
 ////////////////////////////////////////////////////
-
 [animate] {
-  & [animate="fade-in"] {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  & [animate="fade-out"] {
-    animation-name: fadeOut;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  // & [animate="fade-fromLeft"] {
-  //     animation-name: fadeInFromLeft;
-  //     animation-duration: 1s;
-  //     animation-delay: $i * (1s / 4);
-  //     animation-timing-function: ease-in;
-  //     animation-fill-mode: backwards;
-  // }
-
   /*----[when visible on screen]----*/
-  & .is-visible {
-    & [animate="fade-in"] {
+  &.isVisible {
+    &[animate="fadeIn"] {
       animation-name: fadeIn;
       animation-duration: 1s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
     }
-
-    & [animate="fade-out"] {
+    &[animate="fadeOut"] {
       animation-name: fadeOut;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
+      animation-fill-mode: forwards;
+    }
+    &[animate="fadeInFromLeft"] {
+      animation-name: fadeInFromLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
+      animation-fill-mode: forwards;
+    }
+    &[animate="fadeInFromRight"] {
+      animation-name: fadeInFromRight;
       animation-duration: 1s;
       animation-timing-function: ease-in;
       animation-fill-mode: forwards;
@@ -110,7 +106,7 @@
     //     animation-fill-mode: backwards;
     // }
 
-    & [animate="fadeChildrenFromLeft"] {
+    &[animate="fadeChildrenFromLeft"] {
       @for $i from 1 through 5 {
         >.animate-#{$i} {
           animation-name: fadeInFromLeft;
