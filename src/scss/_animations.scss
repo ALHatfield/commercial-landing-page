@@ -70,51 +70,41 @@
 }
 
 ////////////////////////////////////////////////////
-[animate] {
-  /*----[when visible on screen]----*/
-  &.isVisible {
-    &[animate="fadeIn"] {
-      animation-name: fadeIn;
-      animation-duration: 1s;
-      animation-timing-function: ease-in;
-      animation-fill-mode: forwards;
-    }
-    &[animate="fadeOut"] {
-      animation-name: fadeOut;
-      animation-duration: 1s;
-      animation-timing-function: ease-in;
-      animation-fill-mode: forwards;
-    }
-    &[animate="fadeInFromLeft"] {
-      animation-name: fadeInFromLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-in;
-      animation-fill-mode: forwards;
-    }
-    &[animate="fadeInFromRight"] {
-      animation-name: fadeInFromRight;
-      animation-duration: 1s;
-      animation-timing-function: ease-in;
-      animation-fill-mode: forwards;
-    }
-
-    // & [animate="fade-fromLeft"] {
-    //     animation-name: fadeInFromLeft;
-    //     animation-duration: 1s;
-    //     animation-delay: $i * (1s / 4);
-    //     animation-timing-function: ease-in;
-    //     animation-fill-mode: backwards;
-    // }
-
-    &[animate="fadeChildrenFromLeft"] {
-      @for $i from 1 through 5 {
-        >.animate-#{$i} {
-          animation-name: fadeInFromLeft;
-          animation-duration: 1s;
-          animation-delay: $i * (1s / 4);
-          animation-timing-function: ease-in;
-          animation-fill-mode: backwards;
-        }
+// if visible on screen
+[visible=True] {
+  &[animate="fadeIn"] {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  &[animate="fadeOut"] {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  &[animate="fadeInFromLeft"] {
+    animation-name: fadeInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  &[animate="fadeInFromRight"] {
+    animation-name: fadeInFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  &[animate="fadeAllFromLeft"] {
+    @for $i from 0 through 9 {
+      >.animate-#{$i} {
+        animation-name: fadeInFromLeft;
+        animation-duration: 1s;
+        // animation-delay: $i - ($i * (1s / 4));
+        animation-delay: $i * (1s / 4);
+        animation-timing-function: ease-in;
+        animation-fill-mode: backwards;
       }
     }
   }
