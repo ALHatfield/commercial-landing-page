@@ -10,7 +10,6 @@ module.exports = function (grunt) {
     // get the configuration info from package.json ----------------------------
     // this way we can use things like name and version (pkg.name)
     pkg: grunt.file.readJSON("package.json"),
-
     assemble: {
       options: {
         // assets: 'assets',    ??
@@ -25,13 +24,11 @@ module.exports = function (grunt) {
         dest: 'build/index'
       },
     },
-
     clean: {
       default: {
         src: "build/*",
       },
     },
-
     copy: {
       default: {
         files: [
@@ -52,7 +49,6 @@ module.exports = function (grunt) {
         ],
       },
     },
-
     "dart-sass": {
       target: {
         options: {
@@ -70,14 +66,6 @@ module.exports = function (grunt) {
         ],
       },
     },
-
-    open: {
-      dev: {
-        path: "http://127.0.0.1:8888/build",
-        app: "Firefox",
-      },
-    },
-
     watch: {
       all: {
         files: ["src/**/*"],
@@ -93,12 +81,17 @@ module.exports = function (grunt) {
         // },
       },
     },
-
-    serve: {
-      options: {
-        port: 9000,
-      },
-    },
+    // open: {
+    //   dev: {
+    //     path: "http://127.0.0.1:8888/build",
+    //     app: "Firefox",
+    //   },
+    // },
+    // serve: {
+    //   options: {
+    //     port: 9000,
+    //   },
+    // },
   });
 
   // ===========================================================================
@@ -106,7 +99,6 @@ module.exports = function (grunt) {
   // ===========================================================================
   // we can only load these if they are in our package.json
   // make sure you have run npm install so our app can find these
-
   grunt.loadNpmTasks("grunt-assemble");
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-contrib-copy");

@@ -98,7 +98,7 @@
   }
   &[animate="fadeAllFromLeft"] {
     @for $i from 0 through 9 {
-      >.animate-#{$i} {
+      >[animate="animate-#{$i}"] {
         animation-name: fadeInFromLeft;
         animation-duration: 1s;
         // animation-delay: $i - ($i * (1s / 4));

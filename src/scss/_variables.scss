@@ -1,18 +1,20 @@
 /*  Color Profile */
-$bg1: #7ed56f;
-$bg2: #55c57a;
-$bg3: #28b485;
-$bg4: #efefef;
-$color1: #777;
+$color-1: #7ed56f;
+$color-2: #55c57a;
+$color-3: #28b485;
+$bg-1: #efefef;
+
+
+
 
 
 .theme-1 {
-  color: $color1;
-  background-color: $bg1;
+  color: $color-1;
+  background-color: $bg-1;
 }
 
 .color-1 {
-  color: $color1;
+  color: $color-1;
 }
 
 

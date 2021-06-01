@@ -18,23 +18,23 @@
       box-sizing: border-box;
       vertical-align: baseline;
     }
+    body {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #777;
+    }
   </style></head>
 
 <body>
-
-  <div id="landing">
-    <div class="container h-100">
-      <div class="row">
-        <div class="col">
-          <img src="logo-white.png" alt="Logo" class="logo m-2" height="35px">
-        </div>
-        <div class="col">
-          <div animate="fadeAllFromLeft" visible="True"> 
-            <h1 class="text-right animate-0">outdoors</h1>
-            <h3 class="text-right animate-1">is where life happens</h3>
-          </div>
-        </div>
-      </div>
+  <div class="header">
+    <div class="header__logo-box">
+      <img class="header__logo" src="logo-white.png" alt="Logo"  height="35px">
+    </div>
+    <div class="header__text-box" animate="fadeAllFromLeft" >
+      <h1 class="text-right" animate="animate-0">outdoors</h1>
+      <h3 class="text-right" animate="animate-1">is where life happens</h3>
     </div>
   </div>
 
