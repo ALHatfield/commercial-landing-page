@@ -1,11 +1,33 @@
 
+@mixin landing-header-font {
+  font-family: Arial, Helvetica;
+  h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 8rem;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  
+}
+
+
+
+
+
+
+
 
 /*  Responsive Mixin */
 @mixin breakpoint-desktop {
   font-family: Arial, Helvetica;
   font-size: 18px;
   h1 {
-    font-size: 2fem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 2.6rem;
   }
