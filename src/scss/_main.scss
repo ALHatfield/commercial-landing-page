@@ -11,7 +11,7 @@ body {
 
 
 ////////////////////////////////////////////////////////
-// LANDING PAGE
+// LANDING HEADER
 .header {
   @include landing-header-font;
   background-size: cover;
@@ -50,9 +50,7 @@ body {
 }
 ////////////////////////////////////////////////////////
 // SECTIONS
-section {
-  &#about {
-    background-color: $bg-1;
-    padding: 25rem 0;
-  }
+#about {
+  background-color: $bg-1;
+  padding: 25rem 0;
 }

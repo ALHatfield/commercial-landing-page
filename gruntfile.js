@@ -107,11 +107,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-serve");
 
   // Register task default to grunt
-  grunt.registerTask("default", [
-    "clean:default",
-    "copy:default",
-    "assemble",
-    "dart-sass",
-    "watch:all",
-  ]);
+  grunt.registerTask("default", [ "clean:default", "copy:default", "assemble", "dart-sass", "watch:all"]);
 };
