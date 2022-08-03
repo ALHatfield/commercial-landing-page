@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+
+  {{> style }}
   {{> head }}
-  {{> reset }}
+  
 </head>
 
 <body>
@@ -22,10 +24,25 @@
     </div>
   </div>
 
+
+  {{!-- main block elements help search engines and screen readers that this is the main part of the website --}}
   <main>
     <section id="about">
-      <h2 class="heading-secondary">exciting tours for adventurous people</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-12">
+            <h2 class="heading-secondary text-center">exciting tours for adventurous people</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
+          </div>
+          <div class="col-6">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
