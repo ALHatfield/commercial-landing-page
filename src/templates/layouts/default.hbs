@@ -3,50 +3,60 @@
 
 <head>
 
-  {{> style }}
-  {{> head }}
+    {{> style }}
+    {{> head }}
   
 </head>
 
 <body>
-  <div class="header">
-    <div class="header__logo-box">
-      <img class="header__logo" src="logo-white.png" alt="Logo"  height="35px">
+    <div class="header">
+        <div class="header__logo-box">
+            <img class="header__logo" src="logo-white.png" alt="Logo"  height="35px">
+        </div>
+        <div class="header__text-box" animate="fadeAllFromLeft" >
+            <h1 class="d-flex justify-content-between">
+                <span>O</span><span>U</span><span>T</span><span>D</span><span>O</span><span>O</span><span>R</span><span>S</span>
+            </h1>
+            <h2 class="d-flex justify-content-around">
+                <span>I</span><span>S</span><span>&nbsp;</span><span>W</span><span>H</span><span>E</span><span>R</span><span>E</span><span>&nbsp;</span><span>L</span><span>I</span><span>F</span><span>E</span><span>&nbsp;</span><span>H</span><span>A</span><span>P</span><span>P</span><span>E</span><span>N</span><span>S</span>
+            </h2>
+          {{!-- <div class="btn btn-white btn-animated">btn</div> --}}
+        </div>
     </div>
-    <div class="header__text-box" animate="fadeAllFromLeft" >
-      <h1 class="d-flex justify-content-between">
-        <span>O</span><span>U</span><span>T</span><span>D</span><span>O</span><span>O</span><span>R</span><span>S</span>
-      </h1>
-      <h2 class="d-flex justify-content-around">
-        <span>I</span><span>S</span><span>&nbsp;</span><span>W</span><span>H</span><span>E</span><span>R</span><span>E</span><span>&nbsp;</span><span>L</span><span>I</span><span>F</span><span>E</span><span>&nbsp;</span><span>H</span><span>A</span><span>P</span><span>P</span><span>E</span><span>N</span><span>S</span>
-      </h2>
-      {{!-- <div class="btn btn-white btn-animated">btn</div> --}}
-    </div>
-  </div>
 
 
   {{!-- main block elements help search engines and screen readers that this is the main part of the website --}}
-  <main>
-    <section id="about">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-12">
-            <h2 class="heading-secondary text-center">exciting tours for adventurous people</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
-          </div>
-          <div class="col-6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <h2 class="heading-secondary text-center">exciting tours for adventurous people</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="heading-tertiary mb-2">You're going to fall in love with nature</h3>
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
 
-  {{> scripts}}
+                        <h3 class="heading-tertiary mb-2">Live adventures like you never have before</h3>
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque voluptas iure? Vel vero, iste sit, blanditiis consequatur ut sunt voluptas error beatae nemo placeat quos fugit maiores ea quia.</p>
+
+                        <a href="#" class="btn-text">Learn more &rarr;</a>
+                    </div>
+                    <div class="col-6">
+                        <div class="composition">
+                            <img src="nat-1.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
+                            <img src="nat-2.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
+                            <img src="nat-3.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {{> scripts}}
 </body>
 
 </html>

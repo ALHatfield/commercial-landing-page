@@ -5,7 +5,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: $color-1;
 }
 
 
@@ -54,6 +53,43 @@ body {
   background-color: $bg-1;
   padding: 25rem 0;
   margin-top: -20vh;  // moved the section up to over lap with section before ( to cover up the polygon background )
+  color: rgba(#000, 0.9);
 
-  
+  .composition {
+    position: relative;
+
+    &__photo {
+      width: 55%;
+      box-shadow: 0 1.5rem 4rem rgba(#000, 0.4);
+      //border-radius: 2px;
+      transition: all .2s;
+      position: absolute;
+      z-index: 10;
+
+      &--p1 {
+        left: 0;
+        top: 0rem;
+      }
+      &--p2 {
+        right: 0;
+        top: 4rem;
+      }
+      &--p3 {
+        left: 20%;
+        top: 10rem;
+      }
+
+      &:hover {
+        outline: 1.5rem solid $color-3;
+        outline-offset: 2rem;
+        transform: scale(1.05) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+        z-index: 20;
+      }
+
+      &:hover &__photo:not(:hover) {
+        transform: scale(0.9);
+      }
+    }
+  }
 }
